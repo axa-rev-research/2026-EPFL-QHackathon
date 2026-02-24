@@ -42,7 +42,7 @@ Your formulation should include:
 
 ### 3. Quantum Algorithm
 
-Implement a quantum optimization pipeline using an algorithm of your choosing (QAOA, VQE, etc)
+Implement a gate-based quantum optimization pipeline using an algorithm of your choosing (QAOA, VQE, etc)
 
 Your work should include:
 - A well commented code detailing your circuit that implements your use case
