@@ -36,13 +36,13 @@ Your formulation should include:
 - Decision variables  
 - Objective function (profit, capital, acceptance rate, risk cost, etc.)  
 - Practical constraints (regulatory, business, portfolio, limits)  
-- Synthesised toy datasets to run
+- Synthesised toy datasets to run, these can be found in the public domain or currated through an LLM
 - Complexity analysis of the problem (how difficult is it to solve and how do the variables scale with problem size)
 
 
 ### 3. Quantum Algorithm
 
-Implement a quantum optimization pipeline using an algorithm of your choosing (QAOA, VQE, Annealing, etc)
+Implement a quantum optimization pipeline using an algorithm of your choosing (QAOA, VQE, etc)
 
 Your work should include:
 - A well commented code detailing your circuit that implements your use case
@@ -97,7 +97,7 @@ Your final writeup should include:
 1. Create a folder named after your team.  
 2. Include:
    - All classical + quantum code  
-   - Toy datasets
+   - Any dataset that was used
    - graphs/plots  
    - Notebooks  
 3. Add a `README.md` summarizing your solution or include a PDF.  
