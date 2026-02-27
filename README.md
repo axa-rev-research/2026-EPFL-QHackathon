@@ -3,7 +3,7 @@
 </p>
 
 
-# EPFL Quantum Hackathon 2026 – AXA x Quobly - DRAFT
+# EPFL Quantum Hackathon 2026 – AXA x Quobly
 
 Welcome to the **AXA × Quobly Optimization** challenge!  
 In this hackathon, your task is to **identify**, **model**, and **quantize** a real insurance optimization problem — and demonstrate how **quantum optimization methods** could be applied, with a thought on how this might outperfom classical solvers.
@@ -33,10 +33,10 @@ The accuracy or realism of the insurance scenario is not the key point, what mat
 
 Your formulation should include:
 - A clear business description of the problem and assumptions
-- Decision variables  
+- Decision variables
 - Objective function (profit, capital, acceptance rate, risk cost, etc.)  
 - Practical constraints (regulatory, business, portfolio, limits)  
-- Synthesised toy datasets to run, these can be found in the public domain or currated through an LLM
+- A created or sourced toy datasets to test your algorithm(s). You can pull these from public‑domain repositories or quickly generate them using an LLM. Kaggle has a good amount of varied datasets. Don’t overthink the dataset, its only purpose is to help you validate and demo your quantum approach, so realism isn’t a priority.
 - Complexity analysis of the problem (how difficult is it to solve and how do the variables scale with problem size)
 
 
@@ -53,16 +53,17 @@ Your work should include:
 
 ### Extra
 
-If you have time, provide a classical benchmark to your problem using:
-- Simulated annealing  
-- Greedy heuristics  
-- Any simple classical optimizer of your choice  
+If you have time, think about how you would apply a classical benchmark to your problem using any of:
+- Exact algorithms
+- Simulated annealing
+- Greedy/Genetic heuristics
+- Any classical optimizer of your choice  
 
-Then compare the classical and quantum results:
+and if you can apply your classical approach and compare to your quantum results:
 - Solution quality  
 - Runtime
 - Scalability
-- Parameter sensitivity
+- Hyperparameter sensitivity
 
 
 
@@ -88,8 +89,9 @@ Your final writeup should include:
   - Resource Estimation (qubits/depth)
   - Where quantum methods might provide advantage
   - Where quantum methods currently fall short
-  - Effects on problem scaling
+  - Complexity analysis (how difficult is it to solve and how do the variables scale with problem size)
   - How the model could be extended
+  - How a classical benchmark would/did perform 
 
 
 ## Submission
@@ -99,9 +101,9 @@ Your final writeup should include:
    - All classical + quantum code  
    - Any dataset that was used
    - graphs/plots  
-   - Notebooks  
+   - demo notebooks
 3. Add a `README.md` summarizing your solution or include a PDF.  
-4. Submit your project the EPFL Quantum Hackathon event instructions and deadlines. Ensure the project is self contained and reproducible.
+4. Submit your project within the EPFL Quantum Hackathon event instructions and deadlines. Ensure the project is self contained and reproducible.
 
 
 ## Evaluation Criteria
@@ -129,7 +131,8 @@ Clear explanations, plots, and discussion of findings.
 This challenge is **not** about proving real-world quantum advantage in insurance today.  
 It *is* about learning:
 
-- How to encode messy insurance problems into clean optimization models  
+- How to encode messy insurance problems into clean optimization models
+- What sorts of problems run well on quantum computers
 - When quantum algorithms might outperform classical ones    
 
 Good luck and happy hacking! 🚀
