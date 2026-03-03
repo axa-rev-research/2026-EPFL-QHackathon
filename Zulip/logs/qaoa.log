@@ -1,0 +1,48 @@
+[SCALE] Dividing costs by 79 to fit 8 slack bits
+[QUBO] n=12, K=3, slack=8, total qubits=23
+[QAOA] 23 qubits, p=3, 199 ZZ + 23 Z termes
+[QAOA] 6 parametres a optimiser
+[QAOA] lightning.gpu (CUDA)
+[QAOA] Optimisation COBYLA, maxiter=200...
+  COBYLA converged: True, nfev=54
+  Final:      L =  -4040776.27  (39.9s total)
+
+=== Resultat QAOA ===
+Claims selectionnes : ['S001', 'S002', 'S007', 'S008', 'S009', 'S010']
+Clusters actifs     : [0, 1, 2]
+Budget slack        : 91
+Energie             : -4040776.27
+
+=== Resultat Greedy ===
+Claims selectionnes : ['S009', 'S012', 'S005', 'S001', 'S003', 'S010', 'S008', 'S002', 'S006', 'S007', 'S011', 'S004']
+Cout reel           : 9620 / 20000
+Sum R_i             : 58.78
+
+============================================================
+COMPARAISON QAOA vs GREEDY
+============================================================
+
+                     |         QAOA |       Greedy
+-------------------- | ------------ | ------------
+              Claims |            6 |           12
+        Cout (euros) |         5330 |         9620
+              Budget |        20000 |        20000
+      Respect budget |          OUI |          OUI
+             Sum R_i |        34.29 |        58.78
+               Temps |       39.9s |       <0.01s
+
+Clusters:
+  Cluster 0 ['S002', 'S006', 'S010']: QAOA 2/3  Greedy 3/3
+  Cluster 1 ['S004', 'S008', 'S012']: QAOA 1/3  Greedy 3/3
+  Cluster 2 ['S001', 'S007', 'S011']: QAOA 2/3  Greedy 3/3
+
+Plot saved: qaoa_analysis.png
+Plot saved: qaoa_timing.png
+Traceback (most recent call last):
+  File "/users/eleves-a/2024/max.anglade/QuantumInsuranceResourceAllocations/qaoa_solve.py", line 363, in <module>
+    shutil.copy("qaoa_analysis.png", f"{BASE}/qaoa_analysis.png")
+  File "/users/eleves-a/2024/max.anglade/miniconda3/envs/virtenv/lib/python3.11/shutil.py", line 431, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/users/eleves-a/2024/max.anglade/miniconda3/envs/virtenv/lib/python3.11/shutil.py", line 236, in copyfile
+    raise SameFileError("{!r} and {!r} are the same file".format(src, dst))
+shutil.SameFileError: 'qaoa_analysis.png' and '/users/eleves-a/2024/max.anglade/QuantumInsuranceResourceAllocations/qaoa_analysis.png' are the same file

@@ -1,0 +1,20 @@
+{
+  "n_qubits": 8,
+  "dataset": "/users/eleves-a/2024/rami.chagnaud/Documents/QuantumInsuranceResourceAllocations/datasets/tiny_database",
+  "pbc": true,
+  "model": "RBM",
+  "alpha": 1,
+  "sampler": {
+    "type": "MetropolisLocal",
+    "n_chains": 300,
+    "n_samples": 1200
+  },
+  "optimizer": {
+    "type": "SGD",
+    "lr": 0.05,
+    "diag_shift": 0.001
+  },
+  "n_iter": 400,
+  "exact": "?",
+  "execution_time_seconds": 29.537742376327515
+}

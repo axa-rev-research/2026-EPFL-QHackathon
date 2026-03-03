@@ -1,0 +1,20 @@
+{
+    "variables": {
+        "x_i_claims": [
+            0,
+            1,
+            0
+        ],
+        "y_i_clusters": [
+            1
+        ],
+        "z_i_budget": [
+            1,
+            0,
+            1,
+            0
+        ]
+    },
+    "energie_classique": -1.1391752371356847,
+    "temps_execution_s": 30.357840299606323
+}

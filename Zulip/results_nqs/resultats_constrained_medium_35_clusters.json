@@ -1,0 +1,13 @@
+{
+    "dataset": "medium_35_clusters",
+    "budget": 82000.0,
+    "n_qubits": 45,
+    "n_qubits_saved": 5,
+    "cost_scale": 2646,
+    "greedy_obj": 40.55199467173955,
+    "nqs_best_feasible_obj": 42.91212063719871,
+    "nqs_best_obj": 42.91212063719871,
+    "n_feasible": 3163,
+    "n_unique": 4700,
+    "temps_s": 485.32474279403687
+}
